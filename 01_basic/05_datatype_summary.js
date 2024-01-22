@@ -36,3 +36,20 @@ console.log("Undefined type" , typeof undefined);
 
 let num1,num2,num3 = 15;
 console.table([num1,num2,num3]);
+
+
+
+let myName = "karishma yadav";
+let myAnotherName = myName;
+myAnotherName = "Gudiya";
+
+console.log(myName);
+console.log(myAnotherName);
+
+
+let Myinfo = {
+    "email":"Karishm@gmail.com",
+    "upi":"jsfosfs@okaxix",
+}
+
+let myinfo2 = Myinfo;
