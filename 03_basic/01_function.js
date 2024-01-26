@@ -49,3 +49,36 @@ function addTwoNumber(number1,number2){
 const result2 =addTwoNumber(4,6)
 // now here the result2 variable will store the output of funtion  returns
 console.log(`result is ${result2}`);
+
+
+
+// now if we want to take multiple parameters in function then we can use rest operator which is denoted by three dots like this ...variablename
+
+function restOperatorExample(val1,val2,...val){
+    return val;
+}
+
+restOperatorExample(200,300,400,500) // here 200 will be assign to val1, 300 to val2 and the rest will be treates as element of one array and yeah also note that the function here we have call will not log anythign instead will return and that not be visible on the console for that we have to store that return output in to a variable and the printing that variable will show the log 
+
+const result3 = restOperatorExample(200,300,400,500);  
+console.log(`result3 is ${result3}`); // note here only last two value will be printed because function only returning that value not val1, and val2
+
+
+// we can also pass the object and array in function like this
+function objectExample(object){
+    console.log(`The username is ${object.username} and his/her age is ${object.age}`);
+}
+
+const obj = {
+    "username":"karishma",
+    "age":45
+}
+
+// objectExample(obj);
+ objectExample({
+    username:"govind",
+    age:23
+ });
+
+
+ 
