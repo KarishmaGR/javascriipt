@@ -22,3 +22,7 @@ let obj2 = Object.assign({},...height.map((key,i)=>({[key]:names[i]})));
 
 
 console.log(Object.values(obj2));
+
+
+
+// ?.   optional chaining operator return undefined if value or key we are trying to access is notpresent in api response or in
