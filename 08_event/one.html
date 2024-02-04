@@ -31,14 +31,17 @@
         //     // console.log(e.ctrlKey)
         //     console.log("pagex",e.pageX)
         //     console.log("offsetx ", e.offsetX)
+    // e.stop.propoGation()   // used for stoping the event propogationg from parant to child or child to parent
 
         //     console.log("clientx ",e.clientY)
-        // },true)
+        // },true)  // true is for capturing    and false is for bubbling
          
         document.getElementById("images").addEventListener('click',(e)=>{
             
             // console.log(e.srcElement('img'))  // now replaced by e.target
-            console.log(e.p)
+            console.log(e.preventDefault())
+            console.log(e,e.keyCode)
+            console.log(window.innerWidth)
           
            
         })
