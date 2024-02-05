@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    // XHR object is not available in Node environment it will only work in browser js environment
+
+    const apiurl = 'https://api.github.com/users/KarishmaGR';
+const xhr = new XMLHttpRequest()
+
+xhr.open('GET',apiurl);
+
+xhr.onreadystatechange = function(){
+    if(xhr.readyState===4){
+        const datainstring = xhr.responseText;
+        console.log(typeof datainstring)
+        const data = JSON.parse(xhr.responseText)
+        console.log(typeof data);
+        console.log(data);
+        console.log(data.followers)
+
+    }
+}
+
+xhr.send();
+</script>
+</html>
